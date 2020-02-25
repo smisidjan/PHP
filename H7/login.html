@@ -5,11 +5,18 @@
     <title>Formulier</title>
 </head>
 <body>
+<h1>Inloggen</h1>
 <form action="login.php" method="post">
-    Login <input type="email" name="email" value="" size="20" required><br>
-    Wachtwoord <input type="password" name="wachtwoord" value="" size="15" required><br>
+    <div class="form-group">
+        <label>Gebruikersnaam:</label>
+        <input type="text" name="email" value="" required><br>
+    </div>
+    <div class="form-group">
+        <label>Wachtwoord</label>
+        <input type="password" name="wachtwoord" value="" required>
+    </div>
     <input type="submit" name="knop" value="verstuur"><br>
-    <br>
 </form>
 </body>
+<p><a href="login.php?loguit">uitloggen</a></p>
 </html>
