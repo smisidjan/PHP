@@ -1,0 +1,15 @@
+* {
+    text-align: center;
+}
+header {
+    font-family: "Arial", serif;
+}
+
+p a{
+    font-family: 'Bangers', cursive;
+    color: #ff8400;
+    font-size: 35px;
+    line-height: 1.5vh;
+    font-weight: bold;
+    text-decoration: none;
+}
