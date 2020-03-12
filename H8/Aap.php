@@ -1,6 +1,6 @@
 <?php
 
-class Aap
+class aap
 {
 
     private $apenNamen = ["Baviaan", "Guereza", "Langoer", "Tamarin", "Neusaap", "Halfaap", "Mandril",

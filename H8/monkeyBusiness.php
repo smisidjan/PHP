@@ -16,7 +16,7 @@
 <?php
 include "Aap.php";
 
-$apen = new Aap();
+$apen = new aap();
 
 foreach ($apen->getApenNamen() as $naam) {
     echo "<p><a href='https://www.google.nl/search?q=$naam&tbm=isch'>$naam</a></p>";
