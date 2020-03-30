@@ -16,11 +16,15 @@ class Autooverzicht
         return $this->autolijst;
     }
 
-    function getGefilterdeLijst($selected, $autooverzicht)
+    function getGefilterdeLijst($merk)
     {
-        if ($selected == $autooverzicht->merk) {
-            echo $autooverzicht;
+        $selectielijst = array();
+        $merk = $_POST['submit'];
+
+        if ($merk == $this->autolijst['merk']) {
+
         }
+
 
     }
 

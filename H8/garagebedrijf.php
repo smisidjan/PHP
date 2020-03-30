@@ -70,10 +70,12 @@
         }
     }
 
-    if (isset($_POST['submit'])) {
-        $selected = $_POST['auto'];
+    if (['submit']) {
+        foreach ($autooverzicht->getGefilterdeLijst() as $gefilterdelijst) {
+            echo "<p>$autooverzicht->merk $autooverzicht->type " . $autooverzicht->prijs . "</p>";
+            echo "<p><img src=$autooverzicht->url></p>";
+        }
     }
-
 
 
 
