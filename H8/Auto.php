@@ -15,7 +15,6 @@ class Auto
         $this->url = $url;
     }
 
-
     /**
      * @param mixed $merk
      */
@@ -80,3 +79,4 @@ class Auto
         return $this->url;
     }
 }
+
