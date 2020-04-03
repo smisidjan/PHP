@@ -2,9 +2,9 @@
 
 class Auto
 {
-    private $merk;
-    private $type;
-    private $prijs;
+    public $merk;
+    public $type;
+    public $prijs;
 
 
     function __construct($merk, $type, $prijs, $url)

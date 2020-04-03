@@ -30,16 +30,22 @@ class Autooverzicht
         $this->autoos[] = $newAuto;
     }
 
-    public function getAutolijst()
+    public function getAutolijst($minPrijs, $maxPrijs)
     {
-        return $this->autoos;
+        $autoLijst = [];
+        foreach ($this->autoos as $auto) {
+            if ($auto->getPrijs() > $minPrijs && $auto->getPrijs() < $maxPrijs) {
+                $autoLijst[] = $auto;
+            }
+        }
+        return $autoLijst;
     }
 
     public function getGefilterdeLijst($minPrijs, $maxPrijs, $autoMerk)
     {
         $gefilterdeLijst = [];
         foreach ($this->autoos as $auto) {
-            if ($auto->getPrijs() > $minPrijs && $auto->getPrijs() < $maxPrijs && $auto->getMerk() == $autoMerk) {
+            if ($auto->getMerk() == $autoMerk && $auto->getPrijs() > $minPrijs && $auto->getPrijs() < $maxPrijs) {
                 $gefilterdeLijst[] = $auto;
             }
         }

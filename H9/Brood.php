@@ -2,12 +2,23 @@
 
 class Brood {
 
-    public function voegBroodToe($bestanden, $meel, $vorm, $gewicht) {
+    private $broodje;
 
-        if (isset($_POST['submit'])) {
-            $broodjes = array($bestanden, $meel, $vorm, $gewicht);
-            return $broodjes;
-        }
+
+    function __construct()
+    {
+        $this->broodje = [
+            $meel = $_POST['meelsoort'],
+            $vorm = $_POST['vorm'],
+            $gewicht = $_POST['gewicht']
+        ];
     }
 
+    /**
+     * @return array
+     */
+    public function getBroodje()
+    {
+        return $this->broodje;
+    }
 }

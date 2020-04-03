@@ -13,18 +13,18 @@
     <a href="formulier.html">Broodjes toegvoegen</a>
 </header>
 <div>
-    <form action="formulier.html" method="post">
+    <form action="bakkerijVlecht.php" method="post" name="form[]">
         <label for="bestanden">Bestanden:</label><br>
-        <input accept="image/*" type="file" id="bestanden" name="bestanden[bestanden][]">
+        <input accept="image/*" type="file" id="bestanden" name="broodje[][bestanden]">
 
         <label for="meelsoort">Soort meel:</label>
-        <input type="text" id="meelsoort" name="meelsoort[meelsoort][]">
+        <input type="text" id="meelsoort" name="broodje[][meelsoort]">
 
         <label for="vorm">Vorm:</label>
-        <input type="text" id="vorm" name="vorm[vorm][]">
+        <input type="text" id="vorm" name="broodje[][vorm]">
 
         <label for="gewicht">Gewicht:</label>
-        <input type="text" id="gewicht" name="gewicht[gewicht][]">
+        <input type="text" id="gewicht" name="broodje[][gewicht]">
 
         <input type="submit" name="submit" value="Submit">
     </form>

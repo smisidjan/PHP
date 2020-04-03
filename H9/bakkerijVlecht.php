@@ -24,20 +24,34 @@
     </tr>
     <?php
 
+    include "formulier.php";
     include "Brood.php";
 
-    $bestand = isset($_POST['bestanden']) && !empty($_POST['bestanden']) ? $_POST['bestanden'] : null;
-    $meel = isset($_POST['meelsoort']) && !empty($_POST['meelsoort']) ? $_POST['meelsoort'] : null;
+    if (isset($_POST['meelsoort']) && !empty($_POST['meelsoort'])) {
+        $meel = $_POST['meelsoort'];
+
+    }
+
+    $bestand = isset($_POST['bestanden']) && !empty($_POST['bestanden']) ?  $broodje[] = $_POST['bestanden'] : null;
+    $meel = isset($_POST['meelsoort']) && !empty($_POST['meelsoort']) ? $broodje[] = $_POST['meelsoort'] : null;
     $vorm = isset($_POST['vorm']) && !empty($_POST['vorm']) ? $_POST['vorm'] : null;
     $gewicht = isset($_POST['gewicht']) && !empty($_POST['gewicht']) ? $_POST['gewicht'] : null;
 
-    $dataArray = array();
 
-   $formuliervelden = array('bestanden', 'meelsoort', 'vorm', 'gewicht');
-   
+
+
+    if (isset($_POST['submit'])) {
+        for ($i = 0; $i < count($broodje); $i++) {
+            foreach ($broodje as $brood) {
+                echo $brood[$i];
+            }
+        }
+    }
 
 
     ?>
+
+
 </table>
 
 </body>
