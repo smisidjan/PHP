@@ -46,10 +46,10 @@ $maxPrijs = isset($_POST['maxPrijs']) && !empty($_POST['maxPrijs']) ? $_POST['ma
             </option>
         </select>
         <label>Minimale prijs:</label>
-        <input type="text" id="minPrijs" name="minPrijs" value="<?php if (isset($_POST['submit'])) echo $minPrijs ?>">
+        <input type="text" id="minPrijs" name="minPrijs" value="<?php if (isset($_POST['submit']) && !empty($_POST['minPrijs'])) echo $minPrijs ?>">
 
         <label>Maximale prijs:</label>
-        <input type="text" id="maxPrijs" name="maxPrijs" value="<?php if (isset($_POST['submit'])) echo $maxPrijs ?>">
+        <input type="text" id="maxPrijs" name="maxPrijs" value="<?php if (isset($_POST['submit']) && !empty($_POST['maxPrijs'])) echo $maxPrijs ?>">
         <input type="submit" name="submit" value="Submit">
     </form>
 </div>
