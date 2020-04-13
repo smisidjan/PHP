@@ -2,23 +2,57 @@
 
 class Brood {
 
-    private $broodje;
+    private $bestand;
+    private $meel;
+    private $vorm;
+    private $gewicht;
 
 
-    function __construct()
+    function __construct($bestand, $meel, $vorm, $gewicht)
     {
-        $this->broodje = [
-            $meel = $_POST['meelsoort'],
-            $vorm = $_POST['vorm'],
-            $gewicht = $_POST['gewicht']
-        ];
+        $this->bestand = $bestand;
+        $this->meel = $meel;
+        $this->vorm = $vorm;
+        $this->gewicht = $gewicht;
     }
 
     /**
-     * @return array
+     * @return mixed
      */
-    public function getBroodje()
+    public function getBestand($bestand)
     {
-        return $this->broodje;
+        $this->bestand = $bestand;
+        return $this->bestand;
     }
+
+    /**
+     * @return mixed
+     */
+    public function getMeel($meel)
+    {
+        $this->meel = $meel;
+        return $this->meel;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getVorm($vorm)
+    {
+        $this->vorm = $vorm;
+        return $this->vorm;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getGewicht($gewicht)
+    {
+        $this->gewicht = $gewicht;
+        return $this->gewicht;
+    }
+
+
+
+
 }
