@@ -2,10 +2,10 @@
 
 class Brood {
 
-    private $bestand;
-    private $meel;
-    private $vorm;
-    private $gewicht;
+    public $bestand;
+    public $meel;
+    public $vorm;
+    public $gewicht;
 
 
     function __construct($bestand, $meel, $vorm, $gewicht)
@@ -16,39 +16,48 @@ class Brood {
         $this->gewicht = $gewicht;
     }
 
-    /**
-     * @return mixed
-     */
-    public function getBestand($bestand)
+    public function setBestand($bestand)
     {
         $this->bestand = $bestand;
+    }
+
+
+    public function setMeel($meel)
+    {
+        $this->meel = $meel;
+    }
+
+
+    public function setVorm($vorm)
+    {
+        $this->vorm = $vorm;
+    }
+
+
+    public function setGewicht($gewicht)
+    {
+        $this->gewicht = $gewicht;
+    }
+
+
+
+    public function getBestand()
+    {
         return $this->bestand;
     }
 
-    /**
-     * @return mixed
-     */
-    public function getMeel($meel)
+    public function getMeel()
     {
-        $this->meel = $meel;
         return $this->meel;
     }
 
-    /**
-     * @return mixed
-     */
-    public function getVorm($vorm)
+    public function getVorm()
     {
-        $this->vorm = $vorm;
         return $this->vorm;
     }
 
-    /**
-     * @return mixed
-     */
-    public function getGewicht($gewicht)
+    public function getGewicht()
     {
-        $this->gewicht = $gewicht;
         return $this->gewicht;
     }
 
