@@ -7,10 +7,10 @@ class Broodoverzicht
 
     function __construct()
     {
-        $this->broodjes = [
-            new Brood( "brood1.jfif", "tarwemeel", "bol", "50g"),
-            new Brood( "brood2.jfif", "roggemeel", "bol", "40g")
-        ];
+//        $this->broodjes = [
+//            new Brood( "brood1.jfif", "tarwemeel", "bol", "50g"),
+//            new Brood( "brood2.jfif", "roggemeel", "bol", "40g")
+//        ];
     }
 
     public function voegBroodToe($bestand, $meel, $vorm, $gewicht)

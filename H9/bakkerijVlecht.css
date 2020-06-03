@@ -25,7 +25,7 @@ a:hover {
     background-color: lightgray;
     border-radius: 10px;
     color: blue;
-    opacity: 70%;
+    opacity: 55%;
 }
 
 input[type=text], [type=file] {
@@ -78,7 +78,7 @@ table {
 
 th, td {
 
-    padding: 10px;
+    padding: 20px;
     text-align: left;
     border-bottom: 1px solid #ddd;
 }
@@ -89,6 +89,6 @@ tr:hover {
 
 img {
     text-align: center;
-    width: 50px;
-    height: 50px;
+    width: 15px;
+    height: 15px;
 }
