@@ -17,4 +17,6 @@ jobs:
           publiccode: "publiccode.yml"
           gitname: "Open Catalogi bot"
           gitmail: "bot@opencatalogi.nl"
+      - name: Deploy Product Github Page
+        uses: OpenCatalogi/productpage-action@1
     
