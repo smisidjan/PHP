@@ -1,0 +1,15 @@
+name: My PublicCode Workflow
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Update publiccode.yaml
+        uses: OpenCatalogi/publiccode-action@1
+      - name: Deploy Product Github Page
+        uses: OpenCatalogi/productpage-action@1
