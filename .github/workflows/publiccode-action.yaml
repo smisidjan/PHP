@@ -18,5 +18,5 @@ jobs:
           gitname: "Open Catalogi bot"
           gitmail: "bot@opencatalogi.nl"
       - name: Deploy Product Github Page
-        uses: OpenCatalogi/productpage-action@1
+        uses: OpenCatalogi/productpage-action@1.0.0
     
