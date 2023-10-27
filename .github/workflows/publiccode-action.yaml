@@ -1,22 +1,20 @@
-name: My PublicCode Workflow
+name: Mijn Open Catalogi Workflow
 
 on:
-  push:
-    branches:
-      - master
+ push:
+  branches:
+   - main
+
+permissions:
+ contents: write
 
 jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Update publiccode.yaml
-        uses: OpenCatalogi/publiccode-action@1.0.0
-        with:
-          name: "My Codebase"
-          description: "This is a sample repository description"
-          publiccode: "publiccode.yml"
-          gitname: "Open Catalogi bot"
-          gitmail: "bot@opencatalogi.nl"
-      - name: Deploy Product Github Page
-        uses: OpenCatalogi/productpage-action@1.0.0
-    
+ build:
+  runs-on: ubuntu-latest
+  steps:
+   - name: Create or Update publiccode.yaml
+     uses: OpenCatalogi/publiccode-action@1.1.0
+     with:
+      opencatalogi: true
+   - name: Create een Productpagina
+     uses: OpenCatalogi/productpage-action@1.0.0
