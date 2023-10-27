@@ -12,9 +12,5 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:              
-      - name: Create or Update opencatalogi.yaml
-        uses: OpenCatalogi/publiccode-action@1.1.0
-        with:
-          opencatalogi: true
       - name: Create an Open Catalogi page
         uses: OpenCatalogi/opencatalogi-action@1.0.0
