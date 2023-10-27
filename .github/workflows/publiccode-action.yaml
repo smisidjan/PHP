@@ -1,4 +1,4 @@
-name: Mijn Open Catalogi Page Workflow
+name: Mijn Open Catalogi Page Workflow 
 
 on:
  push:
